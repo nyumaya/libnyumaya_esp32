@@ -19,3 +19,5 @@ marvin_model.c as source files in the CMakeLists.txt
 Limitations:
 
 * Currently there is only support for listening to one keyword
+* The library needs to allocate a 115kB memory block on the IRAM
+* You need a PSRAM
