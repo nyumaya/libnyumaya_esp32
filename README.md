@@ -21,3 +21,8 @@ Limitations:
 * Currently there is only support for listening to one keyword
 * The library needs to allocate a 115kB memory block on the IRAM
 * You need a PSRAM
+
+The wake words are compatible with the corresponding version from
+our other [repository](https://github.com/nyumaya/nyumaya_audio_recognition)
+However to make them loadable without a file system they are converted using xxd.
+xxd -i model.premium > model.cc
