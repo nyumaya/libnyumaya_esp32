@@ -26,3 +26,9 @@ The wake words are compatible with the corresponding version from
 our other [repository](https://github.com/nyumaya/nyumaya_audio_recognition)
 However to make them loadable without a file system they are converted using xxd.
 xxd -i model.premium > model.cc
+
+
+# VAD:
+
+Voice activity detection is supported for commercial customers.
+VAD is here defined as follows: Activity shoud be detected if Speech is present in the last 1.2 seconds of audio. Music/Singing/Breathing/Coughing should not count as speech. The output is RAW probabilities and should be filtered in an appropiate way.
